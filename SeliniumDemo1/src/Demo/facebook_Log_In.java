@@ -13,7 +13,7 @@ public class facebook_Log_In {
   driver.get("https://www.facebook.com/");
   driver.manage().window().maximize();
   WebElement email=driver.findElement(By.id("email"));
-  email.sendKeys("9325407620");
+  email.sendKeys("");
 
 	}
 

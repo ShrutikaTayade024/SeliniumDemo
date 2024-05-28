@@ -24,8 +24,8 @@ public class practice_form {
 	WebElement email=driver.findElement(By.id("userEmail"));
 	email.sendKeys("Amarthakare@gmail.com");
 	
-WebElement radio =driver.findElement(By.xpath("//input[@id='gender-radio-1']"));
-radio.submit();
+WebElement radio =driver.findElement(By.xpath("//div[text()='Gender']/../div/div[2]"));
+radio.click();
 
 WebElement mobno=driver.findElement(By.xpath("//input[@id='userNumber']"));
 mobno.sendKeys("9921168994");
@@ -35,12 +35,12 @@ WebElement dob=driver.findElement(By.id("dateOfBirthInput"))	;
 dob.sendKeys("24 march 2003"); 
 
 //for subject
-WebElement sub=driver.findElement(By.xpath("//div[@class='css-1g6gooi']"));
-sub.sendKeys("JAVA");
+WebElement sub=driver.findElement(By.id("subjectsContainer"));
+sub.sendKeys("s");
 
-WebElement dropdwn=driver.findElement(By.id("state"));
-Select select=new Select(dropdwn);
-select.selectByVisibleText("Rajasthan");
+//WebElement dropdwn=driver.findElement(By.id("state"));
+//Select select=new Select(dropdwn);
+//select.selectByVisibleText("Rajasthan");
 
 	}
 
