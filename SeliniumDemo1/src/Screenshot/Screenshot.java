@@ -27,8 +27,10 @@ public class Screenshot {
 		
 		WebElement btn=driver.findElement(By.xpath("//button[@class=' _acan _acap _acas _aj1- _ap30']"));
 		btn.click();
+		
+		
 	// Take ScreenShot
-		TakesScreenshot ts = (TakesScreenshot)driver;
+		TakesScreenshot ts = (TakesScreenshot)driver;    //typecasting
 		File src = ((TakesScreenshot) ts).getScreenshotAs(OutputType.FILE);
 
 		File des = new File("D:\\SeliniumScreenShot\\insta.png");

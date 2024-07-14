@@ -14,18 +14,22 @@ public class Confirm_alert {
 		driver.manage().window().maximize();
 
 		// Simple Alert
-     driver.findElement(By.id("alertButton")).click();
+//     driver.findElement(By.id("alertButton")).click();
+//     driver.switchTo().alert().accept();
 		//confirm Button
-    	driver.findElement(By.id("confirmButton")).click();
-		//prompt
-		driver.findElement(By.id("promtButton")).click();
-		Alert a = driver.switchTo().alert();
-	a.sendKeys("Shrutii");
-	     a.accept();
-		System.out.println(a.getText());
-		//alert shows after 5second
-	driver.findElement(By.id("timerAlertButton")).click();
-
+  	driver.findElement(By.id("confirmButton")).click();
+  	Thread.sleep(3000);
+  	driver.switchTo().alert().dismiss();
+//		//prompt
+//		driver.findElement(By.id("promtButton")).click();
+//		Alert a = driver.switchTo().alert();
+//	a.sendKeys("Shrutii");
+//	     a.accept();
+//	     
+//		System.out.println(a.getText());
+//		//alert shows after 5second
+//     	driver.findElement(By.id("timerAlertButton")).click();
+//
 
 		
 //	   a.accept();
